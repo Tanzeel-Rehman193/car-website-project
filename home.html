@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mycars</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./home.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <!-- style
+    include style.css
+ script
+    include home.js -->
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../static/logo.png" alt="login">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div id="date">
+            <span id="time"></span>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary center">Welcome to MyCars</h1>
+        <p id="para" class="h-secondary center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque iste officiis
+            molestiae cum unde dolorum dicta minima dolores facilis dolore, tempora rerum debitis dolorem sit atque
+            corporis perspiciatis alias molestias eligendi inventore assumenda expedita.</p>
+        <button onclick="togglehide" class="btn">Visit Now</button>
+    </section>
+
+    <section id="brands">
+        <h1 class="h-primary center">Brands</h1>
+        <div id="logos">
+            <div>
+                <img src="../static/img/Audi.png" alt="login">
+            </div>
+            <div>
+                <img src="../static/img/bantley.png" alt="login">
+            </div>
+            <div>
+                <img src="../static/img/porche.png" alt="login">
+            </div>
+            <div>
+                <img src="../static/img/honda.png" alt="login">
+            </div>
+            <div>
+                <img src="../static/img/lambor.png" alt="login">
+            </div>
+            <div>
+                <img src="../static/img/bmw1.png" alt="login">
+            </div>
+        </div>
+    </section>
+
+    <section id="prices">
+        <h1 class="h-elementry center">Prices</h1>
+        <div id="rupees">
+            <h1>Lambourgini</h1>
+            <p>$19500</p>
+            <h1>Audi</h1>
+            <p>$17,500</p>
+            <h1>BMW</h1>
+            <p>$15,500</p>
+            <h1>Bantley</h1>
+            <p>$14,000</p>
+            <h1>Porche</h1>
+            <p>$12,000</p>
+            <h1>Honda</h1>
+            <p>$8,500</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-elementry center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="email" id="Email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">PH#:</label>
+                    <input type="phone" name="contact" id="phone" placeholder="Enter your Ph#">
+                </div>
+                <div class="form-group">
+                    <label for="message">message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="seh">
+                    <button id="sub" type="submit">Submit</button>
+                    <button id="res" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Mycars.com.All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

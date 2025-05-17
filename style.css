@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 15px;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#navbar li a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    /* transition: all 0.2s; */
+}
+
+#logo {
+    padding: 5px 5px;
+}
+
+#logo img {
+    height: 75px;
+    padding: 10px 30px;
+}
+
+/* Home Section */
+#date{
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin-left: 280px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#home {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../static/bg3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    margin-top: 120px;
+}
+
+.h-secondary {
+    font-size: 1.1rem;
+    margin: 0px 300px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(0, 120, 120);
+    padding: 5px 60px;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    /* color: black;
+    background-color: rgb(224, 250, 241); */
+    border: 1.5px solid black;
+    transition: all 0.3s;
+}
+
+.btn:active {
+    color: white;
+    background-color: rgb(0, 21, 21);
+
+}
+
+/* Brands Section */
+#logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    /* border: 2px solid black; */
+    background: url('../static/bg2.jpg') no-repeat center center/cover;
+    /* margin-top: 100px; */
+}
+
+#logos img {
+    margin: 0px 10px;
+    padding: 10px 50px;
+    border: 2px solid rgb(3, 73, 62);
+    height: 100px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+}
+
+/* Prices Section */
+.h-elementry {
+    font-size: 3.8rem;
+}
+
+#rupees {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+    /* background-color: rgb(230, 229, 229); */
+    /* border: 2px solid rgb(7, 71, 56); */
+}
+
+#rupees::before {
+    content: "";
+    position: absolute;
+    height: 79%;
+    width: 100%;
+    background: url('../static/bg.jpg');
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#rupees h1 {
+    font-size: 2.1rem;
+    padding: 5px;
+}
+
+#rupees p {
+    font-size: 1.8rem;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background: url('../static/contact2.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    /* font-family: "Bree Serif", serif;
+font-weight: bolder; */
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.seh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sub{
+    padding: 5px 15px;
+    background-color: darkgreen;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+#sub:active{
+    background-color: rgb(2, 159, 2);
+}
+#res{
+    padding: 5px 15px;
+    background-color: darkred;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+#res:active{
+    background-color: red;
+}
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
